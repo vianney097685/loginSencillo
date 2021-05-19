@@ -11,7 +11,7 @@ class MiLoginApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,
-        primarySwatch: Colors.pink,
+        primarySwatch: Colors.cyan[200],
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       darkTheme: ThemeData(
