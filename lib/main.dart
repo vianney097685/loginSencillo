@@ -30,7 +30,7 @@ class IngresoSistema extends StatefulWidget {
 } // Fin class IngresoSistema
 
 class _IngresoSistemaState extends State<IngresoSistema> {
-  bool isAcceso = false;
+  bool acceso = false;
 
   @override
   void initState() {
