@@ -90,13 +90,46 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                     decoration: InputDecoration(
                       filled: true,
                       //fillcolor: colors.amber,
-                      labelText: 'Username',
+                      labelText: 'Nombre de usuario',
                     ),
                   ),
+                  SizedBox(height: 12.0),
+                  TextField(
+                    decoration: InputDecoration(
+                      filled: true,
+                      labelText: 'Password',
+                    ),
+                    obscureText: true,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 18.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: <Widget>[
+                        FlatButton(
+                          child: Text('CANCELAR'),
+                          onPressed: () {
+                            setState(() {
+                              acceso = false;
+                            });
+                          },
+                        ), //fin de flatbutton
+                        RaisedButton(
+                          child: Text(
+                            'NEXT2',
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              acceso = true;
+                            });
+                          },
+                        ), //fin risebutton
+                      ], //fin de ninos widget[]
+                    ), //fin de nino row
+                  ) //fin de padding
                 ], //fin de widget[]
               ) //fin de columna
             //if verdadero
-
             //if falso
           ], //fin de widget
         ), //fin de listview
