@@ -99,7 +99,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                       filled: true,
                       labelText: 'Password',
                     ),
-                    obscureText: true,
+                    obscureText: true, //codigo de los asteriscos
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 18.0),
@@ -130,8 +130,8 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                 ], //fin de widget[]
               ) //fin de columna
             //if verdadero
-            else 
-            Center(
+            else
+              Center(
                 child: Column(
                   children: <Widget>[
                     Text('YAY, Estoy ingresando!'),
@@ -143,10 +143,10 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                           acceso = false;
                         });
                       },
-                    )//fin boton sobresaliente
-                  ],//fin de ninos widgets[]
-                ),//fin de center
-              )//if falso
+                    ) //fin boton sobresaliente
+                  ], //fin de ninos widgets[]
+                ), //fin de center
+              ) //if falso
           ], //fin de widget
         ), //fin de listview
       ), //AREA SEGURA
